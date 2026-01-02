@@ -1,0 +1,19 @@
+<script>
+    var a=[ 6,233,45,35,9,100,101];
+    for(var j=0;j<a.length;j++){
+        var n=a[j];
+        var sum=0;
+        for (var i=1;i<n;i++){
+            if (n%i==0){    
+                sum=sum+i
+            }
+        }
+    
+        if (n==sum){    
+            document.write(n+ " : perfect number"+"<br>")
+        }
+        else{
+            document.write(n+ " : not perfect number"+"<br>")
+        }
+    }
+    </script>
